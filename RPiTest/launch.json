@@ -1,0 +1,27 @@
+{
+  "configurations": [
+    
+    {
+      "name": ".NET Remote Launch - Framework-dependent",
+      "type": "coreclr",
+      "request": "launch",
+      "program": "~/dotnet/dotnet",
+      "args": [ "~/RPiTest/RPiTest.dll" ],
+      "cwd": "~/RPiTest",
+      "stopAtEntry": false,
+      "console": "internalConsole",
+      "pipeTransport": {
+        "pipeCwd": "${workspaceRoot}",
+        "pipeProgram": "C:\\Program Files\\PuTTY\\PLINK.EXE",
+        "pipeArgs": [
+          "-pw", "elliptic",
+          
+          "pi@192.168.4.127"
+        ],
+        "debuggerPath": "~/vsdbg/vsdbg"
+      }
+    }
+  ]
+}
+  
+
